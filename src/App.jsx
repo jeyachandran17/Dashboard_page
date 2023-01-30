@@ -11,6 +11,7 @@ import CalendarTodayRoundedIcon from '@mui/icons-material/CalendarTodayRounded';
 import AttachMoneyRoundedIcon from '@mui/icons-material/AttachMoneyRounded';
 import ForumRoundedIcon from '@mui/icons-material/ForumRounded';
 import { styled } from '@mui/material/styles';
+import DownloadIcon from '@mui/icons-material/Download';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -106,7 +107,7 @@ const datas = {
       <div className="dashboard">
         <div className="dashboard_header">
           <h1 className='head'>Dashboard</h1>
-          <button className='report'>Generate Report</button>
+          <button className='report'><DownloadIcon />Generate Report</button>
         </div>
       </div>
       <div className="box1">
@@ -138,7 +139,11 @@ const datas = {
           <div className="bodycont">
             <div className="content1">
               <p className='type3'>TASKS</p>
-              <p className='price'>50%</p>
+              <div className="pars">
+                <p className='price1'>50%</p>
+                <BorderLinearProgress variant="determinate" value={50} className="bar"/>
+              </div>
+              {/* <p className='price1'>50%<BorderLinearProgress variant="determinate" value={50} className="bar"/></p> */}
             </div>
             <div className="content2">
               <p><AssignmentRoundedIcon /></p>
