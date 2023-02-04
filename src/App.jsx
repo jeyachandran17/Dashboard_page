@@ -12,7 +12,12 @@ import AttachMoneyRoundedIcon from '@mui/icons-material/AttachMoneyRounded';
 import ForumRoundedIcon from '@mui/icons-material/ForumRounded';
 import { styled } from '@mui/material/styles';
 import DownloadIcon from '@mui/icons-material/Download';
-
+import { Line } from 'react-chartjs-2';
+import { red } from '@mui/material/colors';
+import { ColorBox } from './../../sample_demo_app/src/ColorBox';
+import { createTheme } from '@mui/material/styles';
+import MoreIcon from '@mui/icons-material/MoreVert';
+import IconButton from '@mui/material/IconButton';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -23,8 +28,7 @@ import {
   LineElement,
   Title,
 } from 'chart.js';
-import { Line } from 'react-chartjs-2';
-import { red } from '@mui/material/colors';
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -102,6 +106,10 @@ const datas = {
   // ======================================================
 
   // const normalise = (value) => ((value - MIN) * 100) / (MAX - MIN);
+  // const color = red[500];
+
+  // const colorRed = red[500];
+
   return(
     <div className="main">
       <div className="dashboard">
@@ -141,7 +149,7 @@ const datas = {
               <p className='type3'>TASKS</p>
               <div className="pars">
                 <p className='price1'>50%</p>
-                <BorderLinearProgress variant="determinate" value={50} className="bar"/>
+                <BorderLinearProgress variant="determinate" color="info" value={50} className="bar"/>
               </div>
               {/* <p className='price1'>50%<BorderLinearProgress variant="determinate" value={50} className="bar"/></p> */}
             </div>
@@ -165,13 +173,20 @@ const datas = {
                   {/* box 2 start point */}
       <div className="box2">
         <div className="earnings_overview">
-          <p className="earnings_overview_heading">Earnings Overview</p><hr></hr>
+          <div className="earnings_overview_tittle">
+            <p className="earnings_overview_heading">Earnings Overview</p>
+            <IconButton><MoreIcon /></IconButton>
+          </div>
           <div className="earnings_overview_part">
             <Line options={options} data={datas} />
           </div>
         </div>
         <div className='revenue_sources'>
-          <p className="revenue_heading">Revenue Sources</p><hr></hr>
+          <div className="revenue_sources-tittle">
+            <p className="revenue_heading">Revenue Sources</p>
+            <IconButton><MoreIcon /></IconButton>
+          </div>
+          
           <div className="revenue_part">
             <Doughnut data={data}  />
           </div>
@@ -190,35 +205,35 @@ const datas = {
                 <p>Server Migration</p>
                 <p>20%</p>
               </div>
-              <BorderLinearProgress variant="determinate" value={20} className="bar1"/>
+              <BorderLinearProgress variant="determinate" color='error' value={20} className="bar1"/>
             </div>
             <div className="project2">
               <div className="project_content">
                 <p>Sales Tracking</p>
                 <p>40%</p>
               </div>
-              <BorderLinearProgress variant="determinate" value={40} className="bar1"/>
+              <BorderLinearProgress color="warning" variant="determinate" value={40} className="bar1"/>
             </div>
             <div className="project3">
               <div className="project_content">
                 <p>Customer Database</p>
                 <p>60%</p>
               </div>
-              <BorderLinearProgress variant="determinate" value={60} className="bar1"/>
+              <BorderLinearProgress color='primary' variant="determinate" value={60} className="bar1"/>
             </div>
             <div className="project4">
               <div className="project_content">
                 <p>Payout Details</p>
                 <p>80%</p>
               </div>
-              <BorderLinearProgress variant="determinate" value={80} className="bar1"/>
+              <BorderLinearProgress variant="determinate" color="info" value={80} className="bar1"/>
             </div>
             <div className="project5">
               <div className="project_content">
                 <p>Account Setup</p>
                 <p>Complete!</p>
               </div>
-              <BorderLinearProgress variant="determinate" value={100} className="bar1"/>
+              <BorderLinearProgress variant="determinate" value={100} color="success" className="bar1"/>
             </div>
           </div>
           <div className="colorbox">
@@ -260,6 +275,7 @@ const datas = {
           <div className="Illustrations">
             <div className='Illustrations_tittle'>
               <p>Illustrations</p>
+              
             </div>
             <div className='Illustrations_content'>
               <div className="Illustrations_pic">
