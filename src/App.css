@@ -259,6 +259,14 @@
     margin-bottom: 20px;
 }
 
+.earnings_overview_tittle, .revenue_sources-tittle{
+    border-bottom: 1px solid gray;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .txtcontent{
     align-items: center;
     justify-content: center;
