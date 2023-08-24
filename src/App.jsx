@@ -43,7 +43,7 @@ ChartJS.register(
 function App() {
   return (
     <div className="App">
-      <Dashboard></Dashboard>
+      <Dashboard />
     </div>
   )
 }
@@ -60,10 +60,6 @@ const options = {
     legend: {
       position: 'top',
     },
-    // title: {
-    //   display: true,
-    //   text: 'Chart.js Line Chart',
-    // },
   },
 };
 
@@ -72,7 +68,6 @@ const datas = {
   labels,
   datasets: [
     {
-      // label: 'Dataset 1',
       data: [0,10000,5000,15000,10000,20000,15000,25000,20000,30000,25000,40000],
       borderColor: 'dodgerblue',
       backgroundColor: 'white',
@@ -102,13 +97,6 @@ const datas = {
       },
     ],
   };
-
-  // ======================================================
-
-  // const normalise = (value) => ((value - MIN) * 100) / (MAX - MIN);
-  // const color = red[500];
-
-  // const colorRed = red[500];
 
   return(
     <div className="main">
