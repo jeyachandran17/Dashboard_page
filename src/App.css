@@ -18,11 +18,12 @@
 
 .pars{
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    align-items: center;
 }
+
 .bar{
     width: 180px;
-    margin-top: 16px;
 }
 
 .dashboard{
@@ -31,18 +32,18 @@
 
 .dashboard_header{
     display: flex;
-    height: 30px;
+    flex-wrap: wrap;
+    height: min-content;
     align-items: center;
+    justify-content: space-between;
 }
 
 .report{
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
+    padding: 5px;
     width: 150px;
-    display:flex;
-    position: absolute;
-    right: 40px;
     background-color: #4e73df;
     border: 1px solid gray;
     border-radius: 3px;
@@ -50,23 +51,18 @@
 }
 
 .box1{
-    height: auto;
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-left: 20px;
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
 .boxbody1,.boxbody2,.boxbody3,.boxbody4{
+    display: flex;
     height: 100px;
     width: 320px;
     border-radius: 7px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    /* box-shadow: 1px 1px 1px 1px  gray; */
     box-shadow: 0px 0px 0px 1px gainsboro;
 
 }
@@ -87,30 +83,37 @@
 
 .bodycont{
     display: flex;
-    flex-flow: wrap;
     align-items: center;
+    width: 100%;
+    padding: 25px;
+    justify-content: space-between;
 }
 
-.type1, .type2, .type3, .type4, .price{
-    width: 250px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+.content1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
+
 .price{
     font-size: 20px;
 }
+
 .type1{
     font-size: small;
     color: blue;
 }
+
 .type2{
     font-size: small;
     color: rgb(107, 234, 79);
 }
+
 .type3{
     font-size: small;
     color: lightskyblue;
 }
+
 .type4{
     font-size: small;
     color: orange;

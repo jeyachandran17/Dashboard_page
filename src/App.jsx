@@ -139,7 +139,6 @@ const datas = {
                 <p className='price1'>50%</p>
                 <BorderLinearProgress variant="determinate" color="info" value={50} className="bar"/>
               </div>
-              {/* <p className='price1'>50%<BorderLinearProgress variant="determinate" value={50} className="bar"/></p> */}
             </div>
             <div className="content2">
               <p><AssignmentRoundedIcon /></p>
