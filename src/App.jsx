@@ -187,40 +187,52 @@ const datas = {
             <div className='project_tittle'>
               <p>Projects</p> 
             </div>
-            <div className="project1">
-              <div className="project_content">
-                <p>Server Migration</p>
-                <p>20%</p>
+            <div className="project-contant">
+              <div className="project1">
+                <div className="project_content">
+                  <p>Server Migration</p>
+                  <p>20%</p>
+                </div>
+                <div>
+                  <BorderLinearProgress variant="determinate" color='error' value={20} className="bar1"/>
+                </div>
               </div>
-              <BorderLinearProgress variant="determinate" color='error' value={20} className="bar1"/>
-            </div>
-            <div className="project2">
-              <div className="project_content">
-                <p>Sales Tracking</p>
-                <p>40%</p>
+              <div className="project2">
+                <div className="project_content">
+                  <p>Sales Tracking</p>
+                  <p>40%</p>
+                </div>
+                <div>
+                  <BorderLinearProgress color="warning" variant="determinate" value={40} className="bar1"/>
+                </div>
               </div>
-              <BorderLinearProgress color="warning" variant="determinate" value={40} className="bar1"/>
-            </div>
-            <div className="project3">
-              <div className="project_content">
-                <p>Customer Database</p>
-                <p>60%</p>
+              <div className="project3">
+                <div className="project_content">
+                  <p>Customer Database</p>
+                  <p>60%</p>
+                </div>
+                <div>
+                  <BorderLinearProgress color='primary' variant="determinate" value={60} className="bar1"/>
+                </div>
               </div>
-              <BorderLinearProgress color='primary' variant="determinate" value={60} className="bar1"/>
-            </div>
-            <div className="project4">
-              <div className="project_content">
-                <p>Payout Details</p>
-                <p>80%</p>
+              <div className="project4">
+                <div className="project_content">
+                  <p>Payout Details</p>
+                  <p>80%</p>
+                </div>
+                <div>
+                  <BorderLinearProgress variant="determinate" color="info" value={80} className="bar1"/>
+                </div>
               </div>
-              <BorderLinearProgress variant="determinate" color="info" value={80} className="bar1"/>
-            </div>
-            <div className="project5">
-              <div className="project_content">
-                <p>Account Setup</p>
-                <p>Complete!</p>
+              <div className="project5">
+                <div className="project_content">
+                  <p>Account Setup</p>
+                  <p>Complete!</p>
+                </div>
+                <div>
+                  <BorderLinearProgress variant="determinate" value={100} color="success" className="bar1"/>
+                </div>
               </div>
-              <BorderLinearProgress variant="determinate" value={100} color="success" className="bar1"/>
             </div>
           </div>
           <div className="colorbox">
