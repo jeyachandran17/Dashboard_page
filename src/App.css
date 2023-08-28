@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .main{
     display: flex;
     flex-direction: column;
@@ -57,7 +56,10 @@
     gap: 10px;
 }
 
-.boxbody1,.boxbody2,.boxbody3,.boxbody4{
+.boxbody1,
+.boxbody2,
+.boxbody3,
+.boxbody4{
     display: flex;
     height: 100px;
     width: 320px;
@@ -74,9 +76,11 @@
 .boxbody2{
         border-left: 5px solid rgb(107, 234, 79);
 }
+
 .boxbody3{
         border-left: 5px solid lightskyblue;
 }
+
 .boxbody4{
         border-left: 5px solid orange;
 }
@@ -139,13 +143,15 @@
     padding: 10px;
 }
 
-.earnings_overview_heading, .revenue_heading{
+.earnings_overview_heading, 
+.revenue_heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.revenue_sources, .earnings_overview{
+.revenue_sources, 
+.earnings_overview{
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -162,12 +168,23 @@
 
 /* --------------- colorbox -------------------- */
 
-.Primary, .Success, .Info, .Warning, .Danger, .Secondary, .Light, .Dark{
+.Primary, 
+.Success, 
+.Info, 
+.Warning, 
+.Danger, 
+.Secondary, 
+.Light, 
+.Dark{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     height: 80px;
     width: 340px;
-    margin-bottom: 10px;
     border: 1px solid gray;
     border-radius: 5px;
+    padding: 10px;
+    gap: 5px;
 }
 
 .Primary{
@@ -202,30 +219,19 @@
     background-color: #5a5c69;
 }
 
-.txt{
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 0px;
-}
-
-.txt1{
-    margin-top: 0px;
-    margin-left: 10px;
-}
-
 .picture{
     height: 200px;
     width: 400px;
 }
 
 .Illustrations_pic{
-
     display: flex;
     align-items: center;
     justify-content:center;
 }
 
-.column1, .column2{
+.column1, 
+.column2{
     display: flex;
     flex-direction: column;
     height: min-content;
@@ -251,7 +257,6 @@
 
 .Illustrations{
     border: 1px solid gray;
-    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 0px 2px gainsboro;
 }
@@ -269,22 +274,29 @@
     gap: 20px;
 }
 
-.Illustrations_tittle, .Development_Approach_tittle{
+.Illustrations_tittle, 
+.Development_Approach_tittle{
+    padding: 10px;
     border-bottom: 1px solid gray;
-    padding-left: 15px;
-    margin-bottom: 20px;
 }
 
-.earnings_overview_tittle, .revenue_sources-tittle{
-    border-bottom: 1px solid gray;
+.Illustrations_content{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
 }
 
 .txtcontent{
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
+    padding: 20px;
+}
+
+.earnings_overview_tittle, 
+.revenue_sources-tittle{
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .project_content{
@@ -300,7 +312,11 @@
     padding: 20px;
 }
 
-.project1, .project2, .project3, .project4, .project5{
+.project1, 
+.project2, 
+.project3, 
+.project4, 
+.project5{
     display: flex;
     flex-direction: column;
     gap: 5px;
